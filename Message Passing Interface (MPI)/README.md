@@ -1,4 +1,4 @@
-#Para instalar o MPI no Linux, abra um terminal e digite o seguinte comando:
+# Para instalar o MPI no Linux, abra um terminal e digite o seguinte comando:
 
 sudo apt-get install libopenmpi-dev openmpi-bin openmpi-doc
 
