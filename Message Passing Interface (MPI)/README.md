@@ -6,6 +6,10 @@ Para compilar um programa MPI usamos o seguinte comando:
 
 mpicc arquivo.c -o arquivo 
 
+ou
+
+mpicc -o arquivo.c arquivo 
+
 Para executar o programa em paralelo, usamos o comando, em que 8 indica a quantidade de processos que serão criados (pode ser trocado por outra quantidade):
 
 mpiexec -np 8 arquivo 
