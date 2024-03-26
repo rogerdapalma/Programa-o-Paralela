@@ -8,6 +8,7 @@
    e. Processo 0 distribui um vetor de tamanho N entre todos os processos da aplicação
    f. Processo 0 recebe um vetor de tamanho N que está distribuído entre todos os processos da aplicação
 
+
 2. Desenvolva um programa MPI onde cada processo i envia uma mensagem para o próximo processo, formando um anel lógico.
    a. Em uma versão do algoritmo, utilize a estrutura de desvio if
    b. Em oura versão do algoritmo, encontre duas equações que definam o anel lógico sem usar o if
