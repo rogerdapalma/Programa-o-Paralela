@@ -35,7 +35,7 @@ message é in no processo root. Uma mensagem Broadcast não pode ser recebida co
 ### Broadcast (4)
 
 ### Exemplo:
-```
+```c
 float K;
 
 MPI_Bcast(&K, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
@@ -46,7 +46,7 @@ MPI_Bcast(&K, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
 - Um-para-todos. Um processo divide e distribui seus dados entre todos os outros processos. Especifica um processo root e todos os processos precisam especificar o mesmo processo root e o mesmo comunicador.
 ### Scatter (2)
 
-```
+```c
 int MPI_Scatter(void* send_data, int send_count, MPI_Datatype send_type, void* recv_data, int recv_count, MPI_Datatype recv_type, int root, MPI_Comm comm);
 ```
 -    send_data: endereço do dado referenciado em cada processo.
@@ -65,7 +65,7 @@ int MPI_Scatter(void* send_data, int send_count, MPI_Datatype send_type, void* r
 ### Gather (4)
 
 #### Exemplo:
-```
+```c
 float A[N/p];
 float B[N];
 
@@ -77,7 +77,7 @@ MPI_Gather(A, N/p, MPI_FLOAT, B, N/p, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
 ### AllGather (2)
 
-```
+```c
 int MPI_Allgather(void* send_data, int send_count, MPI_Datatype send_type, void* recv_data, int recv_count, MPI_Datatype recv_type, MPI_Comm comm);
 ```
 
@@ -92,7 +92,7 @@ int MPI_Allgather(void* send_data, int send_count, MPI_Datatype send_type, void*
 ### AllGather (3)
 
 #### Exemplo:
-```
+```c
 float a;
 float b[p];
 
@@ -106,7 +106,7 @@ MPI_Allgather(&a, 1, MPI_FLOAT, b, 1, MPI_FLOAT, MPI_COMM_WORLD);
 
 Exemplo: MPI_MAX
 
-```
+```c
 a b c d e
 
 root MPI_Reduce
@@ -132,7 +132,7 @@ MPI_MAX
 
 ### Reduce (3)
 
-```
+```c
 int MPI_Reduce(void* operando, void* resultado, int count, MPI_Datatype datatype, MPI_Op operador, int root, MPI_Comm comm);
 
 ```
@@ -146,7 +146,7 @@ int MPI_Reduce(void* operando, void* resultado, int count, MPI_Datatype datatype
 -    comm: comunicador.
 
 ### Reduce (4)
-```
+```c
 Operações MPI:
 
     MPI_MAX
@@ -158,7 +158,7 @@ Operações MPI:
 ### Reduce (5)
 
 #### Exemplo: Soma Global
-```
+```c
 float a[N], total[N];
 MPI_Reduce(&a, &total, N, MPI_FLOAT, MPI_SUM, 0, MPI_COMM_WORLD);
 
@@ -169,7 +169,7 @@ MPI_Reduce(&a, &total, N, MPI_FLOAT, MPI_SUM, 0, MPI_COMM_WORLD);
 - A operação MPI_Allreduce faz com que cada um dos processos receba o resultado da operação global. Não há parâmetro root na função.
 ### AllReduce (2)
 
-```
+```c
 int MPI_Allreduce(void* operando, void* resultado, int count, MPI_Datatype datatype, MPI_Op operador, MPI_Comm comm);
 
 ```
@@ -179,7 +179,7 @@ int MPI_Allreduce(void* operando, void* resultado, int count, MPI_Datatype datat
 
 #### Exemplo: MPI_MAX
 
-```
+```c
 a b c d e
 
 root MPI_Reduce
