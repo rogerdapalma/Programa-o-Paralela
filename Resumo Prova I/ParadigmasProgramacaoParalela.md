@@ -31,7 +31,7 @@ shared int sum = 0;
 
 // Código que pode ser executado por vários processos
 sum = sum + private_x;
-
+```
 ### Como garantir que esta linha de código seja executada por um processo de cada vez?
 
 ## Message Passing
