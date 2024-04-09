@@ -68,7 +68,7 @@ int MPI_Scatter(void* send_data, int send_count, MPI_Datatype send_type, void* r
 ```
 float A[N/p];
 float B[N];
-...
+
 MPI_Gather(A, N/p, MPI_FLOAT, B, N/p, MPI_FLOAT, 0, MPI_COMM_WORLD);
 ```
 ### AllGather
@@ -95,7 +95,7 @@ int MPI_Allgather(void* send_data, int send_count, MPI_Datatype send_type, void*
 ```
 float a;
 float b[p];
-...
+
 MPI_Allgather(&a, 1, MPI_FLOAT, b, 1, MPI_FLOAT, MPI_COMM_WORLD);
 ```
 
