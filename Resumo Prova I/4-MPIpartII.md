@@ -39,7 +39,7 @@ message é in no processo root. Uma mensagem Broadcast não pode ser recebida co
 float K;
 
 MPI_Bcast(&K, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
-``
+```
 
 ### Scatter
 
@@ -146,14 +146,13 @@ int MPI_Reduce(void* operando, void* resultado, int count, MPI_Datatype datatype
 -    comm: comunicador.
 
 ### Reduce (4)
-``
+```
 Operações MPI:
 
     MPI_MAX
     MPI_MIN
     MPI_SUM
     MPI_PROD
-    ...
 ```
 
 ### Reduce (5)
