@@ -56,7 +56,7 @@
   {
       // Code executed by all threads
   }
-```
+  ```
 - Variáveis compartilhadas: Utilizadas por todas threads da aplicação.
 - Variáveis privadas: Escopo de cada thread; podem ter valores diferentes em cada thread.
 
@@ -85,7 +85,7 @@
 #pragma omp for [clause ...]
 schedule (type [, chunk])
 reduction (operator: list)
-...
+
 nowait
 ```
 
