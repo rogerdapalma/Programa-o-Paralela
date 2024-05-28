@@ -69,12 +69,12 @@ nowait
 ### Teste a diretiva single, como neste exemplo, em uma região paralela de código e verifique o resultado.
 
 - Diretivas combinadas
-- Sincronização
+  - Sincronização
 
-- Proteção de seção crítica de código
-- Diretivas:
-- Critical
-- Barrier
+  - Proteção de seção crítica de código
+  - Diretivas:
+  - Critical
+  - Barrier
 
 ### Diretiva critical
 
