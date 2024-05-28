@@ -20,6 +20,7 @@ for (i=0; i < N; i++) {
 {
   id = omp_get_thread_num();
   #pragma omp sections nowait
+  // nowait nao cria barreira no fim da seções
   {
 
     #pragma omp section
