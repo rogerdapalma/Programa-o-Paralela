@@ -71,3 +71,9 @@ println(E)
 ### 5. CONCLUSÕES
 
 Julia combina a facilidade de uso de linguagens de alto nível com o desempenho de linguagens de baixo nível, tornando-a ideal para aplicações que requerem computação intensiva, como modelagem matemática, simulações e aprendizado de máquina. A comunidade Julia está crescendo rapidamente, e sua biblioteca de pacotes continua a expandir, aumentando sua aplicabilidade em diversos campos da ciência e engenharia.
+
+### Referências
+
+- [Julia Programming Language Official Site](https://julialang.org/)
+- [Monteiro, 2022 PDF on Distributed Computing in Julia](https://run.unl.pt/bitstream/10362/144294/1/Monteiro_2022.pdf)
+
