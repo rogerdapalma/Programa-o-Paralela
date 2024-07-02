@@ -76,4 +76,6 @@ Julia combina a facilidade de uso de linguagens de alto nível com o desempenho 
 
 - [Julia Programming Language Official Site](https://julialang.org/)
 - [Monteiro, 2022 PDF on Distributed Computing in Julia](https://run.unl.pt/bitstream/10362/144294/1/Monteiro_2022.pdf)
+- [Wikipédia - Julia (linguagem de programação)](https://pt.wikipedia.org/wiki/Julia_(linguagem_de_programa%C3%A7%C3%A3o)) - Uma página da enciclopédia que fornece uma visão geral sobre a linguagem de programação Julia, incluindo seu desenvolvimento, características e usos.
+- [GitHub - Tutorial de Julia em Português](https://github.com/JuliaLangPt/tutorial_PT_BR) - Um tutorial completo sobre a linguagem de programação Julia disponível em português, cobrindo desde conceitos básicos até tópicos avançados.
 
